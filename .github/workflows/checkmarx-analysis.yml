@@ -26,7 +26,7 @@ jobs:
     - name: Checkmarx CxFlow Action
       uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.0
       with:
-        params: --checkmarx.version=9.0
+        params: --checkmarx.version=9.0 --http-read-timeout=1200000
         project: GithubActionTest
         team: '/CxServer'
         checkmarx_url: ${{ secrets.CHECKMARX_URL }}
