@@ -29,7 +29,7 @@ jobs:
       uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.1
       with:
         project: GitHub-WebGoat-7.0.1-${{ steps.get-branch.outputs.branch }}
-        team: '/CxServer/SP/ANZ/CBA_Test'
+        team: '/CxServer/OWASP/Java/WebGoat-7.0.1/GitHub'
         checkmarx_url: ${{ secrets.CHECKMARX_URL }}
         checkmarx_username: ${{ secrets.CHECKMARX_USERNAME }}
         checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }}
